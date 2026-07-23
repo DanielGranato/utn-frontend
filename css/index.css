@@ -1,0 +1,57 @@
+
+.hero {
+    background: url("../assets/hero_image.jpg") center/cover no-repeat;
+    min-height: 100vh;
+    min-height: 100dvh;
+}
+
+.hero-content {
+    max-width: 50%;
+    padding-top: 40%;
+    font-size: 2rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(320px, 420px);
+    gap: 4rem;
+    align-items: center;
+}
+
+.hero-card {
+    margin-top: 40%;
+    transform:translateY(80px);
+    max-width: 90%;
+    background-color: var(--color-primary);
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+input[type="text"] {
+    margin: 1.5rem 0;
+    padding: 0.8rem;      
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    background-color: var(--color-primary);
+}
+
+button {
+    width: 100%;
+}
+
+
+@media (max-width: 900px) {
+
+    .hero-content {
+        margin-bottom: 8rem;
+    }
+
+    .hero-card {
+        margin-top: 90%;
+    }
+
+}

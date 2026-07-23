@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="favico.png" type="png" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <!-- logotipo y la navegación como elementos hermanos; <nav> contiene únicamente enlaces de navegación -->
+    <header class="header">
+      <a href="/" class="logo">
+        <img src="assets/logo.png" alt="logo del negocio" />
+      </a>
+
+      <!-- uso de aria-label para una mejor accesibilidad web -->
+      <nav aria-label="Navegacion principal">
+        <ul>
+          <li>
+            <a href="#">link1</a>
+          </li>
+
+          <li>
+            <a href="#">link2</a>
+          </li>
+
+          <li>
+            <a href="#">link3</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container">
+          <div class="hero-content">
+            <h1>Una experiencia financiera extraordinaria</h1>
+          </div>
+
+          <aside class="hero-card">
+            <h2>Solicita tu tarjeta de crédito y tu cuenta Bank</h2>
+
+            <form>
+              <label for="DNI"></label>
+
+              <input
+                type="text"
+                id="DNI"
+                name="DNI"
+                placeholder="Ingrese tu DNI"
+              />
+                <br>
+              <button type="submit">Seguir</button>
+            </form>
+          </aside>
+        </div>
+      </section>
+
+      <section class="benefits">
+        <div class="container">...</div>
+      </section>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>
