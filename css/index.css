@@ -46,12 +46,22 @@ button {
 
 @media (max-width: 900px) {
 
-    .hero-content {
-        margin-bottom: 8rem;
+    .container {
+        grid-template-columns: 1fr;
+        gap: 0;
     }
 
+    .hero-content,
     .hero-card {
-        margin-top: 90%;
+        justify-self: center;
+        width: 100%;
+        max-width: 420px;
+        margin-top: 0;
+    }
+
+    .hero-content {
+        text-align: center;
+        max-width: 90%;
     }
 
 }
