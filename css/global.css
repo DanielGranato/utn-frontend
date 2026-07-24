@@ -1,6 +1,7 @@
 
 @import url(header.css);
 @import url(home.css);
+@import url(footer.css);
 
 /* CSS RESET */
 body,
@@ -22,7 +23,7 @@ label,
 input,
 select,
 textarea,
-button,
+button
 
 * {
   margin: 0;
@@ -37,13 +38,13 @@ button,
     --container-width: 1200px;
     --border-radius: 1rem;
     --transition: 0.3s ease;
-    --fonte-principal: 'inter', sans-serif;
+    --font-primary: 'inter', sans-serif;
 }
 
 body {
     color: var(--color-text);
     background-color: var(--color-background);
-    font-family: var(--fonte-principal);
+    font-family: var(--font-primary);
 }
 
 h1 {
