@@ -39,13 +39,10 @@ input[type="text"] {
     background-color: var(--color-primary);
 }
 
-button {
-    width: 100%;
-    background-color: white;
-    border-radius: 0;
-    color: black;
+.benefits img {
+    width: 50%;
+    margin: 0 auto;
 }
-
 
 @media (max-width: 900px) {
 
