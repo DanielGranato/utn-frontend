@@ -51,16 +51,20 @@ button {
         gap: 0;
     }
 
-    .hero-content,
     .hero-card {
         justify-self: center;
         width: 100%;
         max-width: 420px;
-        margin-top: 0;
+        margin-top: -20%;
     }
 
     .hero-content {
         text-align: center;
+        padding-top: 80%;
+        justify-self: center;
+        width: 100%;
+        max-width: 420px;
+        margin-top: 0;
     }
 
     h1 {
