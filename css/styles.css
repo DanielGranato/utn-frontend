@@ -74,9 +74,23 @@ img {
     --container-width: 1200px;
     --border-radius: 1rem;
     --transition: 0.3s ease;
+    --fonte-principal: 'inter', sans-serif;
 }
 
 body {
     color: var(--color-text);
     background-color: var(--color-background);
+    font-family: var(--fonte-principal);
 }
+
+h1 {
+    font-family: var(--font-primary);
+    font-weight: 700;
+}
+
+h2 {
+    font-family: var(--font-primary);
+    font-weight: 500;
+}
+
+
