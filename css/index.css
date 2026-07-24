@@ -41,6 +41,8 @@ input[type="text"] {
 
 button {
     width: 100%;
+    background-color: white;
+    border-radius: 0;
 }
 
 
@@ -82,8 +84,5 @@ button {
 @media (max-width: 425px) {
     .hero-card {
         margin-top: -20%;
-    }
-    .hero-content {
-        padding-top: 80%;
     }
 }
