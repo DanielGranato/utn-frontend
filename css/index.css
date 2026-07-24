@@ -55,12 +55,12 @@ button {
         justify-self: center;
         width: 100%;
         max-width: 420px;
-        margin-top: -20%;
+        margin-top: 0;
     }
 
     .hero-content {
         text-align: center;
-        padding-top: 80%;
+        padding-top: 40%;
         justify-self: center;
         width: 100%;
         max-width: 420px;
@@ -69,6 +69,21 @@ button {
 
     h1 {
     font-size: clamp(2rem, 6vw, 4.5rem);
+    }
+
 }
 
+@media (max-width: 650px) {
+    .hero-content {
+        padding-top: 80%;
+    }
+}
+
+@media (max-width: 425px) {
+    .hero-card {
+        margin-top: -20%;
+    }
+    .hero-content {
+        padding-top: 80%;
+    }
 }
