@@ -51,13 +51,13 @@ li {
 }
 
 .social-links a {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     height: 40px;
     width: 40px;
     background-color: var(--color-terciary);
     margin-right: 10px;
-    text-align: center;
-    line-height: 40px;
     border-radius: 50%;
     color: var(--color-text);
     transition: all 0.5s ease;

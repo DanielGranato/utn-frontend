@@ -49,6 +49,11 @@ body {
     font-family: var(--font-primary);
 }
 
+p {
+    font-size: 1rem;
+    font-weight: 200;
+}
+
 h1 {
     font-family: var(--font-primary);
     font-weight: 700;
@@ -59,7 +64,8 @@ h2 {
     font-weight: 200;
     font-size: 3.5rem;
     text-align: center;
-    margin: 6rem 0;
+    margin: 6rem 1rem;
+
 }
 
 a {
