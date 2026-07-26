@@ -5,7 +5,7 @@
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 5rem 0 1rem;
+    padding: 0 3rem 0 0;
 }
 
 .logo {
@@ -19,7 +19,6 @@
 
 nav ul {
     display: flex;
-    gap: 2rem;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -28,14 +27,34 @@ nav ul {
 nav a {
     display: flex;
     align-items: center;
-    gap: .5rem;
+    gap: 5rem;
+}
+
+@media (max-width: 1200px) {
+
+    .header {
+        padding: 0rem 4rem 0 2rem;
+    }
+
 }
 
 @media (max-width: 900px) {
 
+    .header {
+        padding: 0 3.5rem 0 1rem;
+    }
+
     .logo {
         width: clamp(120px, 10vw, 140px);
         height: auto;
+    }
+
+}
+
+@media (max-width: 425px) {
+
+    .header {
+        padding: 0;
     }
 
 }
