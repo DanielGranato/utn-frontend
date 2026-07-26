@@ -21,10 +21,5 @@
 
     .form-card {
         margin-top: 0;
-        transform:translateY(80px);
-        max-width: 100%;
-        background-color: var(--color-primary);
-        padding: 2rem;
-        border-radius: 10px;
     }
 }
