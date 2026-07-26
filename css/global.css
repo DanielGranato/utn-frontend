@@ -80,10 +80,15 @@ img {
 
 .button {
     width: 100%;
-    background-color: var(--color-primary);
-    border: 2px solid black;
+    background-color: var(--color-background);
+    border: 2px solid var(--color-primary);
     padding: 1.6rem;
     border-radius: 9px;
+}
+
+.button:hover {
+    background-color: var(--color-secondary);
+    cursor: pointer;
 }
 
 
