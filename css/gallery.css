@@ -1,6 +1,7 @@
 
 .card-arrow-container {
     display: flex;
+    align-items:center;
 }
 
 .elegant-arrow {
@@ -28,12 +29,17 @@
 .products-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 0;
+    gap: 1rem;
 }
 
 .product-card {
-    transition: .3s;
     background-color: var(--color-secondary);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,.12);
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease;
 }
 
 .product-card h3 {
@@ -47,6 +53,14 @@
 .product-text {
     padding: 1rem 1rem 3rem 1rem;
     color: var(--color-terciary);
+}
+
+.product-card img {
+    transition: transform .4s ease;
+}
+
+.product-card:hover img {
+    transform: scale(1.03);
 }
 
 @media (max-width: 900px) {
