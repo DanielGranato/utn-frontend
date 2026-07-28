@@ -61,7 +61,7 @@
               <div class="form-group">
                 <label for="email">E-mail</label>
                 <input
-                  type="text"
+                  type="email"
                   id="email"
                   name="email"
                   placeholder="Ingrese tu e-mail"
@@ -71,26 +71,38 @@
 
             <form class="register-form">
               <div class="form-group">
-                <label for="telefono">Telefono</label>
+                <label for="DNI">DNI</label>
                 <input
-                  type="text"
-                  id="telefono"
-                  name="telefono"
-                  placeholder="Ingrese tu telefono"
+                  type="number"
+                  id="DNI"
+                  name="DNI"
+                  placeholder="Ingrese tu DNI"
                 />
               </div>
             </form>
 
             <form class="register-form">
               <div class="form-group">
-                <label for="DNI">DNI</label>
+                <label for="birthdate">Fecha de Nacimiento</label>
                 <input
-                  type="text"
-                  id="DNI"
-                  name="DNI"
+                  type="date"
+                  id="birthdate"
+                  name="birthdate"
                   placeholder="Ingrese tu DNI"
                 />
               </div>
+            </form>
+
+            <form class="register-form">
+              <div class="form-group">
+                <label for="maritalStatus">Estado civil:</label>
+                <select id="maritalStatus" name="userMaritalStatus">
+                    <option value="">Selecione...</option>
+                    <option value="casado">Casado</option>
+                    <option value="solteiro">Soltero</option>
+                    <option value="divorciado">Divorciado</option>
+                    <option value="casado">Unión Estable</option>
+                </select>
             </form>
 
             <button type="submit">Avanzar</button>
@@ -99,7 +111,7 @@
       </section>
 
       <section>
-        <h2>El futuro comienza aquí</h2>
+        <h2>El futuro comienza aquí.</h2>
       </section>
 
     </main>

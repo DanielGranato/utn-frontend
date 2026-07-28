@@ -93,4 +93,21 @@ img {
     cursor: pointer;
 }
 
+input {
+    margin: 1rem 0;
+    padding: 0.8rem;      
+    border: 1px solid var(--color-text);
+    border-radius: 4px;
+    width: 100%;
+    background-color: var(--color-primary);
+    color: var(--color-text);
+}
 
+button[type="submit"] {
+    height: 1.8rem;
+}
+
+button:hover {
+    background-color: var(--color-primary);
+    color: var(--color-text);
+}

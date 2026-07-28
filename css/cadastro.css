@@ -1,12 +1,12 @@
 
 .hero-content-form {
     max-width: 50%;
-    padding-top: 33%;
+    padding-top: 18%;
     font-size: 2rem;
 }
 
 .form-card {
-    margin-top: 30%;
+    margin-top: 10%;
     margin-bottom: 20%;
     transform:translateY(80px);
     max-width: 100%;
@@ -30,6 +30,16 @@
     width: 100%;
     border: 1px solid var(--color-text);
     border-radius: 6px;
+    color: var(--color-text);
+}
+
+#maritalStatus {
+    margin: 1rem 0;
+    padding: 0.8rem;      
+    border: 1px solid var(--color-text);
+    border-radius: 4px;
+    width: 100%;
+    background-color: var(--color-primary);
     color: var(--color-text);
 }
 
