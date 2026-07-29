@@ -83,7 +83,7 @@ img {
 .button {
     width: 100%;
     background-color: var(--color-background);
-    border: 2px solid var(--color-primary);
+    border: 2px solid var(--color-secondary);
     padding: 1.6rem;
     border-radius: 9px;
 }
