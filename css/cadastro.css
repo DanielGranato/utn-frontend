@@ -49,6 +49,14 @@
 
 @media (max-width: 900px) {
 
+    .hero-content-form {
+        text-align: center;
+        justify-self: center;
+        width: 100%;
+        max-width: 420px;
+        margin-top: 0;
+    }
+
     .form-card {
         margin-top: 0;
     }
@@ -72,10 +80,10 @@
         height: 704px;
     }
     .hero-content-form {
-        padding-top: 90%;
+        padding-top: 80%;
     }
 
     .form-h2 {
-        margin-top: 150%;
+        margin-top: 120%;
     }
 }
