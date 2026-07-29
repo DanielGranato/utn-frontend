@@ -9,7 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="icon" href="favico.png" type="png" />
+    <link rel="icon" href="./favicon.png" type="png" />
     <link rel="stylesheet" href="./css/global.css" />
     <title>Bank</title>
   </head>
@@ -25,11 +25,11 @@
       <nav aria-label="Navegacion principal">
         <ul>
           <li class="button">
-            <a href="galeria.html">productos</a>
+            <a href="productos.html">productos</a>
           </li>
 
           <li class="button">
-            <a href="cadastro.html">registrarse</a>
+            <a href="registro.html">registrarse</a>
           </li>
         </ul>
       </nav>
@@ -38,112 +38,95 @@
     <main>
       <section class="hero">
         <div class="container">
-          <div class="hero-content">
+          <div class="hero-content-form">
             <h1>Bank, una experiencia financiera extraordinaria</h1>
           </div>
 
-          <aside class="hero-card">
-            <div class="card-arrow-container">
-              <svg
-                class="elegant-arrow"
-                xmlns="http://w3.org"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path d="M12 5v14M19 12l-7 7-7-7" />
-              </svg>
-              <h3>Descubra nuestros productos financieros y beneficios</h3>
-            </div>
+          <aside class="form-card">
+            <h3>Crear tu cuenta</h3>
+
+            <form class="register-form">
+              <div class="form-group">
+                <label for="nombre">Nombre</label>
+                <input
+                  type="text"
+                  id="nombre"
+                  name="nombre"
+                  placeholder="Ingrese tu nombre completo"
+                />
+              </div>
+            </form>
+
+            <form class="register-form">
+              <div class="form-group">
+                <label for="email">E-mail</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Ingrese tu e-mail"
+                />
+              </div>
+            </form>
+
+            <form class="register-form">
+              <div class="form-group">
+                <label for="DNI">DNI</label>
+                <input
+                  type="number"
+                  id="DNI"
+                  name="DNI"
+                  placeholder="Ingrese tu DNI"
+                />
+              </div>
+            </form>
+
+            <form class="register-form">
+              <div class="form-group">
+                <label for="birthdate">Fecha de Nacimiento</label>
+                <input
+                  type="text"
+                  id="birthdate"
+                  name="birthdate"
+                  placeholder="Ingrese tu fecha de nacimiento"
+                />
+              </div>
+            </form>
+
+            <form class="register-form">
+              <div class="form-group">
+                <label for="maritalStatus">Estado civil:</label>
+                <select id="maritalStatus" name="userMaritalStatus">
+                    <option value="">Selecione...</option>
+                    <option value="casado">Casado</option>
+                    <option value="solteiro">Soltero</option>
+                    <option value="divorciado">Divorciado</option>
+                    <option value="casado">Unión Estable</option>
+                </select>
+            </form>
+
+            <button type="submit">Avanzar</button>
           </aside>
         </div>
       </section>
 
       <section>
-        <h2>Vos elegís los beneficios que más te importan</h2>
-
-        <div class="products-grid">
-
-          <article class="product-card">
-            <a href="#">
-              <img src="assets/img5.png" alt="" />
-              <div class="product-text">
-                <h3>Tarjeta de Crédito</h3>
-                <p>Gestiona tus compras con seguridad y sin complicaciones.</p>
-              </div>
-            </a>
-          </article>
-
-          <article class="product-card">
-            <a href="#">
-              <img src="assets/auto.jpg" alt="" />
-              <div class="product-text">
-                <h3>Bank Auto</h3>
-                <p>Financiación de autos y motos en cuestión de momentos.</p>
-              </div>
-            </a>
-          </article>
-
-          <article class="product-card">
-            <a href="#">
-              <img src="assets/cuenta-global.jpg" alt="" />
-              <div class="product-text">
-                <h3>Cuenta Global</h3>
-                <p>Cuentas en dólares y euros con comisiones mucho más bajas</p>
-              </div>
-            </a>
-          </article>
-
-          <article class="product-card">
-            <a href="#">
-              <img src="assets/vacaciones.jpg" alt="" />
-              <div class="product-text">
-                <h3>Bank Invest</h3>
-                <p>Invierte en el extranjero usando la misma aplicación.</p>
-              </div>
-            </a>
-          </article>
-
-          <article class="product-card">
-            <a href="#">
-              <img src="assets/img3.jpg" alt="" />
-              <div class="product-text">
-                <h3>Lugares Seguros</h3>
-                <p>Tecnología de seguridad basada en la geolocalización.</p>
-              </div>
-            </a>
-          </article>
-
-          <article class="product-card">
-            <a href="#">
-              <img src="assets/puntos.jpg" alt="" />
-              <div class="product-text">
-                <h3>Préstamos Personales</h3>
-                <p>Crédito para mantener las facturas al día.</p>
-              </div>
-            </a>
-          </article>
-        </div>
+        <h2 class="form-h2">El futuro comienza aquí. </h2>
       </section>
+
     </main>
 
     <footer class="footer">
       <div class="footer-content">
         <div class="footer-col">
           <h3>Quien somos</h3>
-          <p>
-            Innovamos tu relación con las finanzas para que puedas centrarte en
-            lo que realmente importa.
-          </p>
+          <p>Innovamos tu relación con las finanzas para que puedas centrarte en lo que realmente importa.</p>
         </div>
         <div class="footer-col">
           <h3>Links</h3>
           <ul>
-            <li><a href="galeria.html">productos</a></li>
-            <li><a href="cadastro.html">registrarse</a></li>
+            <li><a href="productos.html">productos</a></li>
+            <li><a href="registro.html">registrarse</a></li>
           </ul>
         </div>
         <div class="footer-col">

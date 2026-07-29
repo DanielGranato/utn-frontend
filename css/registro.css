@@ -49,38 +49,38 @@
 
 @media (max-width: 900px) {
 
+    .hero {
+        height: 704px;
+    }
+
     .hero-content-form {
         text-align: center;
         justify-self: center;
         width: 100%;
-        max-width: 420px;
-        margin-top: 0;
+        margin-top: 22%;
     }
 
     .form-card {
         margin-top: 0;
+        width: 70%;
+        margin: 0 auto;
     }
-}
 
-
-@media (max-width: 768px) {
-
-    .hero {
-        height: 704px;
-    }
     .form-h2 {
-        margin-top: 50%;
+        margin-top: 80%;
     }
 }
 
 
 @media (max-width: 650px) {
 
-    .hero {
-        height: 704px;
+    .form-card {
+        width: 100%;
     }
+
     .hero-content-form {
-        padding-top: 80%;
+        padding-top: 58%;
+        max-width: 100%;
     }
 
     .form-h2 {

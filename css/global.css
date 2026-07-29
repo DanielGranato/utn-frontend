@@ -1,9 +1,9 @@
 
-@import url(cadastro.css);
+@import url(registro.css);
 @import url(header.css);
 @import url(home.css);
 @import url(footer.css);
-@import url(gallery.css);
+@import url(productos.css);
 
 /* CSS RESET */
 body,
