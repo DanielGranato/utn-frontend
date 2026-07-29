@@ -74,6 +74,10 @@
 
 @media (max-width: 650px) {
 
+    .hero {
+        height: 704px;
+    }
+
     .products-grid {
         grid-template-columns: 1fr;
     }
