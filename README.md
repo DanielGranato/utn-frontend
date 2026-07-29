@@ -2,7 +2,7 @@
 
 A responsive banking landing page built with HTML and CSS as part of a Front-end course at Universidad Tecnológica Nacional (UTN).
 
-<img src="./assets/readme/home-desktop.png">
+<img src="./assets/home-desktop.png">
 
 ## ✨ Features
 
