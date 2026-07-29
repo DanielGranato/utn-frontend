@@ -52,6 +52,10 @@
 
 
 @media (max-width: 650px) {
+
+    .hero {
+        height: 704px;
+    }
     .hero-content-form {
         padding-top: 90%;
     }
