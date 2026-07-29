@@ -43,10 +43,25 @@
     color: var(--color-text);
 }
 
+.form-h2 {
+    margin-top: 15%;
+}
+
 @media (max-width: 900px) {
 
     .form-card {
         margin-top: 0;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .hero {
+        height: 704px;
+    }
+    .form-h2 {
+        margin-top: 50%;
     }
 }
 
@@ -58,5 +73,9 @@
     }
     .hero-content-form {
         padding-top: 90%;
+    }
+
+    .form-h2 {
+        margin-top: 150%;
     }
 }
