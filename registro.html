@@ -3,29 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Creá tu cuenta Bank y solicitá tu tarjeta en minutos."
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="icon" href="./favicon.png" type="png" />
+    <link rel="icon" href="./favicon.png" type="image/png" />
     <link rel="stylesheet" href="./css/global.css" />
-    <title>Bank</title>
+    <title>Bank | Registro</title>
   </head>
 
   <body>
     <!-- logotipo y la navegación como elementos hermanos; <nav> contiene únicamente enlaces de navegación -->
     <header class="header">
       <a href="index.html" class="logo">
-        <img src="assets/logo.png" alt="logo del negocio" />
+        <img src="assets/logo.png" alt="Logo de Bank" />
       </a>
 
       <!-- uso de aria-label para una mejor accesibilidad web -->
-      <nav aria-label="Navegacion principal">
+      <nav aria-label="Navegación principal">
         <ul>
           <li class="button">
             <a href="productos.html">productos</a>
+          </li>
+
+          <li class="button">
+            <a href="login.html">iniciar sesión</a>
           </li>
 
           <li class="button">
@@ -36,82 +44,129 @@
     </header>
 
     <main>
-      <section class="hero">
+      <section class="hero hero-register">
         <div class="container">
           <div class="hero-content-form">
             <h1>Bank, una experiencia financiera extraordinaria</h1>
           </div>
+        </div>
+      </section>
+
+      <section class="form-follow">
+        <div class="container">
+          <h2 class="form-h2">El futuro comienza aquí.</h2>
 
           <aside class="form-card">
             <h3>Crear tu cuenta</h3>
 
-            <form class="register-form">
+            <form class="register-form" action="#" method="post">
               <div class="form-group">
-                <label for="nombre">Nombre</label>
+                <label for="nombre">Nombre completo</label>
                 <input
                   type="text"
                   id="nombre"
                   name="nombre"
+                  autocomplete="name"
                   placeholder="Ingrese tu nombre completo"
+                  required
                 />
               </div>
-            </form>
 
-            <form class="register-form">
               <div class="form-group">
-                <label for="email">E-mail</label>
+                <label for="email-registro">E-mail</label>
                 <input
                   type="email"
-                  id="email"
+                  id="email-registro"
                   name="email"
+                  autocomplete="email"
                   placeholder="Ingrese tu e-mail"
+                  required
                 />
               </div>
-            </form>
 
-            <form class="register-form">
               <div class="form-group">
-                <label for="DNI">DNI</label>
-                <input
-                  type="number"
-                  id="DNI"
-                  name="DNI"
-                  placeholder="Ingrese tu DNI"
-                />
-              </div>
-            </form>
-
-            <form class="register-form">
-              <div class="form-group">
-                <label for="birthdate">Fecha de Nacimiento</label>
+                <label for="dni-registro">DNI</label>
                 <input
                   type="text"
-                  id="birthdate"
-                  name="birthdate"
-                  placeholder="Ingrese tu fecha de nacimiento"
+                  id="dni-registro"
+                  name="dni"
+                  inputmode="numeric"
+                  autocomplete="off"
+                  placeholder="Ingrese tu DNI"
+                  required
                 />
               </div>
-            </form>
 
-            <form class="register-form">
               <div class="form-group">
-                <label for="maritalStatus">Estado civil:</label>
-                <select id="maritalStatus" name="userMaritalStatus">
-                    <option value="">Selecione...</option>
-                    <option value="casado">Casado</option>
-                    <option value="solteiro">Soltero</option>
-                    <option value="divorciado">Divorciado</option>
-                    <option value="casado">Unión Estable</option>
-                </select>
+                <label for="telefono-registro">Teléfono</label>
+                <input
+                  type="tel"
+                  id="telefono-registro"
+                  name="telefono"
+                  autocomplete="tel"
+                  placeholder="Ingrese tu teléfono"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="fecha-nacimiento">Fecha de nacimiento</label>
+                <input
+                  type="date"
+                  id="fecha-nacimiento"
+                  name="fechaNacimiento"
+                  autocomplete="bday"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="password-registro">Contraseña</label>
+                <input
+                  type="password"
+                  id="password-registro"
+                  name="password"
+                  autocomplete="new-password"
+                  placeholder="Mínimo 8 caracteres"
+                  minlength="8"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="password-confirm">Confirmar contraseña</label>
+                <input
+                  type="password"
+                  id="password-confirm"
+                  name="passwordConfirm"
+                  autocomplete="new-password"
+                  placeholder="Repetí tu contraseña"
+                  minlength="8"
+                  required
+                />
+              </div>
+
+              <div class="form-check">
+                <input
+                  type="checkbox"
+                  id="terminos"
+                  name="terminos"
+                  required
+                />
+                <label for="terminos">
+                  Acepto los términos y condiciones y la política de privacidad
+                </label>
+              </div>
+
+              <button type="submit">Crear cuenta</button>
             </form>
 
-            <button type="submit">Avanzar</button>
+            <p class="auth-links">
+              ¿Ya tenés cuenta?
+              <a href="login.html">Iniciá sesión</a>
+            </p>
           </aside>
         </div>
-      </section>
-
-      <section>
-        <h2 class="form-h2">El futuro comienza aquí. </h2>
       </section>
 
     </main>
@@ -119,13 +174,14 @@
     <footer class="footer">
       <div class="footer-content">
         <div class="footer-col">
-          <h3>Quien somos</h3>
+          <h3>Quiénes somos</h3>
           <p>Innovamos tu relación con las finanzas para que puedas centrarte en lo que realmente importa.</p>
         </div>
         <div class="footer-col">
           <h3>Links</h3>
           <ul>
             <li><a href="productos.html">productos</a></li>
+            <li><a href="login.html">iniciar sesión</a></li>
             <li><a href="registro.html">registrarse</a></li>
           </ul>
         </div>
@@ -133,8 +189,12 @@
           <h3>Contacto</h3>
           <ul>
             <li>Puerto Madero, Buenos Aires, Argentina</li>
-            <li>contato@exemplo.com</li>
-            <li>+54 999 999 999</li>
+            <li>
+              <a href="mailto:contacto@exemplo.com">contacto@exemplo.com</a>
+            </li>
+            <li>
+              <a href="tel:+54999999999">+54 999 999 999</a>
+            </li>
           </ul>
         </div>
         <div class="footer-col">

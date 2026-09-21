@@ -19,9 +19,16 @@
 
 nav ul {
     display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
     list-style: none;
     margin: 0;
     padding: 0;
+}
+
+nav .button {
+    width: auto;
+    padding: 1.2rem 1.4rem;
 }
 
 nav a {
@@ -49,6 +56,12 @@ nav a {
         height: auto;
     }
 
+}
+
+@media (max-width: 650px) {
+    nav .button {
+        padding: 0.7rem 0.85rem;
+    }
 }
 
 @media (max-width: 425px) {

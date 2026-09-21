@@ -1,19 +1,47 @@
+.hero-register {
+    height: 100vh;
+    height: 100dvh;
+    min-height: 100vh;
+    min-height: 100dvh;
+    overflow: visible;
+}
 
 .hero-content-form {
     max-width: 50%;
-    padding-top: 18%;
+    padding-top: 0;
+    margin-top: 36vh;
+    align-self: start;
     font-size: 2rem;
+}
+
+.form-follow {
+    position: relative;
+    z-index: 1;
+    padding-bottom: 4rem;
+}
+
+.form-follow .container {
+    align-items: start;
 }
 
 .form-card {
     margin-top: 10%;
-    margin-bottom: 20%;
-    transform:translateY(80px);
+    margin-bottom: 2rem;
     max-width: 100%;
     background-color: var(--color-primary);
     padding: 2rem;
     border-radius: 10px;
     text-align: center;
+}
+
+.hero .form-card {
+    align-self: start;
+    margin-top: 36vh;
+}
+
+.form-follow .form-card {
+    margin-top: -64vh;
+    margin-bottom: 0;
 }
 
 .register-form .form-group {
@@ -33,57 +61,58 @@
     color: var(--color-text);
 }
 
-#maritalStatus {
-    margin: 1rem 0;
-    padding: 0.8rem;      
-    border: 1px solid var(--color-text);
-    border-radius: 4px;
-    width: 100%;
-    background-color: var(--color-primary);
-    color: var(--color-text);
-}
-
 .form-h2 {
-    margin-top: 15%;
+    margin: 3rem 0 0;
+    text-align: left;
 }
 
 @media (max-width: 900px) {
-
-    .hero {
-        height: 704px;
-    }
-
     .hero-content-form {
         text-align: center;
         justify-self: center;
         width: 100%;
-        margin-top: 22%;
+        max-width: 420px;
+        padding-top: 0;
+        margin-top: 22vh;
     }
 
-    .form-card {
-        margin-top: 0;
-        width: 70%;
-        margin: 0 auto;
+    .form-follow .container {
+        justify-items: center;
+    }
+
+    .form-follow .form-card {
+        order: -1;
+        width: 100%;
+        max-width: 420px;
+        margin-top: -12rem;
+    }
+
+    .hero .form-card {
+        width: 100%;
+        max-width: 420px;
+        justify-self: center;
+        margin-top: calc(100vh - 12rem);
     }
 
     .form-h2 {
-        margin-top: 80%;
+        text-align: center;
+        margin: 3rem 1rem 0;
     }
 }
 
-
 @media (max-width: 650px) {
-
-    .form-card {
-        width: 100%;
-    }
-
     .hero-content-form {
-        padding-top: 58%;
+        padding-top: 0;
+        margin-top: 18vh;
         max-width: 100%;
     }
 
-    .form-h2 {
-        margin-top: 120%;
+    .form-follow .form-card {
+        width: 100%;
+        margin-top: -8rem;
+    }
+
+    .hero .form-card {
+        margin-top: calc(100vh - 8rem);
     }
 }
