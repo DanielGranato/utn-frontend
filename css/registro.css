@@ -72,8 +72,8 @@
         justify-self: center;
         width: 100%;
         max-width: 420px;
-        padding-top: 0;
-        margin-top: 22vh;
+        padding-top: 40%;
+        margin-top: 0;
     }
 
     .form-follow .container {
@@ -84,14 +84,14 @@
         order: -1;
         width: 100%;
         max-width: 420px;
-        margin-top: -12rem;
+        margin-top: -20rem;
     }
 
     .hero .form-card {
         width: 100%;
         max-width: 420px;
         justify-self: center;
-        margin-top: calc(100vh - 12rem);
+        margin-top: 1.5rem;
     }
 
     .form-h2 {
@@ -102,17 +102,27 @@
 
 @media (max-width: 650px) {
     .hero-content-form {
-        padding-top: 0;
-        margin-top: 18vh;
+        padding-top: 80%;
+        margin-top: 0;
         max-width: 100%;
     }
 
     .form-follow .form-card {
         width: 100%;
-        margin-top: -8rem;
+        margin-top: -24rem;
     }
 
     .hero .form-card {
-        margin-top: calc(100vh - 8rem);
+        margin-top: 1.25rem;
+    }
+}
+
+@media (max-width: 425px) {
+    .hero .form-card {
+        margin-top: -10%;
+    }
+
+    .form-follow .form-card {
+        margin-top: -20rem;
     }
 }
